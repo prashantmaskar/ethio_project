@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title><?php echo $m_title ?></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="../../css/adminmaterialize.css" type="text/css" rel="stylesheet" media="screen">
+        <link href="../../css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen">
+        <link href="../../css/admin.css" type="text/css" rel="stylesheet" media="screen">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header" class="page-topbar ">
+            <div class="navbar-fixed">
+                <nav class="navbar-color">
+                    <div class="nav-wrapper">
+                        <ul class="left">
+                            <li>
+                                <h1 class="logo-wrapper">
+                                    <a href="#" class="brand-logo darken-1" >
+                                        EthioEdu
+                                    </a>    
+                                </h1>
+                                <span class="logo-text">Ethioedu</span>
+                            </li>
+                        </ul>
+                        <ul class="right hid-mid-screen">
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen">
+                                    <i class="mdi-action-settings-overscan"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect waves-block waves-light notification-button" data-activates="notifications-dropdown">
+                                    <i class="mdi-social-notifications"><small class="notification-badge">5</small></i>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-activates="chat-out" class="waves-effect waves-block waves-light chat-collapse">
+                                    <i class="mdi-communication-chat"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+
+        </header>
+        <!--header End-->
+
+        <!--start main-->
+        <div id="main">
+            <div class="wrapper">
+                <aside id="leftside-nav">
+                    <ul id="slide-out" class="side-nav fixed leftside-navigation">
+                        <li class="user-details cyan darken-2">
+                            <div class="row">
+                                <div class="col col s4 m4 l4">
+                                    <img src="../../images/avatar.jpg" class="circle responsive-img valign profile-image">
+                                </div>
+                                <div class="col col s8 m8 l8">
+                                    <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">
+                                        Fikreman
+                                        <i class="mdi-navigation-arrow-drop-down right"></i>
+                                    </a>
+                                    <ul id="profile-dropdown" class="dropdown-content">
+                                        <li>
+                                            <a href="#">
+                                                <i class="mdi-action-face-unlock"></i>
+                                                Profile
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <p class="user-roal">Administrator</p>
+                                </div>
+                            </div>
+                        </li> 
+                        <li class="bold active">
+                            <a href="#" class="waves-effect waves-cyan">
+                                <i class="mdi-action-dashboard"></i> 
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="no-padding">
+                            <ul class="collapsible collapsible-accordion">
+                                <li class="bold">
+                                    <a class="collapsible-header waves-effect waves-cyan">
+                                        <i class="mdi-action-wallet-travel"></i>
+                                        School Manage
+                                    </a>
+                                    <div class="collapsible-body" >
+                                        <ul>
+                                            <li><a href="<?php echo base_url() . 'index.php/admin/Addschool' ?>">Add School</a>
+                                            </li>
+                                            <li><a href="<?php echo base_url() . 'index.php/admin/Listschool' ?>">List School</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="bold">
+                            <ul class="collapsible collapsible-accordion">
+                                <li class="bold">
+                                    <a class="collapsible-header waves-effect waves-cyan">
+                                        <i class="mdi-action-wallet-travel"></i>
+                                        Course Manage
+                                    </a>
+                                    <div class="collapsible-body" >
+                                        <ul>
+                                            <li><a href="<?php echo base_url() . 'index.php/admin/Addcourse' ?>">Add Course</a>
+                                            </li>
+                                            <li><a href="<?php echo base_url() . 'index.php/admin/listcourse' ?>">List Course</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="bold">
+                            <ul class="collapsible collapsible-accordion">
+                                <li class="bold">
+                                    <a class="collapsible-header waves-effect waves-cyan">
+                                        <i class="mdi-action-wallet-travel"></i>
+                                        News Manage
+                                    </a>
+                                    <div class="collapsible-body" >
+                                        <ul>
+                                            <li><a href="<?php echo base_url() . 'index.php/admin/Addnews' ?>">Add News</a>
+                                            </li>
+                                            <li><a href="<?php echo base_url() . 'index.php/admin/listnews' ?>">List News</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="no-padding">
+                            <ul class="collapsible collapsible-accordion">
+                                <li class="bold">
+                                    <a class="collapsible-header waves-effect waves-cyan">
+                                        <i class="mdi-action-wallet-travel"></i>
+                                        Service Manage
+                                    </a>
+                                    <div class="collapsible-body" >
+                                        <ul>
+                                            <li><a href="#">Past Exam</a>
+                                            </li>
+                                            <li><a href="#">Tips</a>
+                                            </li>
+                                            <li><a href="<?php echo base_url() . 'index.php/admin/quesanswer' ?>">Questions & Answers</a>
+                                            </li>
+                                            <li><a href="<?php echo base_url() . 'index.php/admin/Project_Topic' ?>">Project Topics</a>
+                                            </li>
+                                            <li><a href="<?php echo base_url() . 'index.php/admin/Events' ?>">Add Events</a>
+                                            </li>
+                                            <li><a href="<?php echo base_url() . 'index.php/admin/ListEvent' ?>"> List Events</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>                   
+                </aside>
+                <section id="content">
+                    <div id="breadcrumbs-wrapper">
+                        <!-- Search for small screen -->
+                        <div class="header-search-wrapper grey hide-on-large-only">
+                            <i class="mdi-action-search active"></i>
+                            <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize">
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col s12 m12 l12">
+                                    <h5 class="breadcrumbs-title">Add News</h5>
+                                    <ol class="breadcrumbs">
+                                        <li><a href="<?php echo base_url()?>admin/dashboard">Dashboard</a>
+                                        </li>
+                                       
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="section">
+                         
+                            <div class="divider"></div>
+                            <div id="form-wrap">
+                                <div class="row">
+                                    <div class="col s12 m12 l12">
+                                        <div class="card-panel">
+                                            <h4 class="header2">News FORM</h4>
+                                            <div class="row">
+                                                <form id="addnews" class=" form-control col m12" action="#" method="post">
+                                                    <div class="form-group input-field col s12">
+                                                        <input id="Caption" name="caption" type="text" class="validate">
+                                                        <label for="Caption">News Title</label>
+                                                    </div>
+                                                    <div class="form-group input-field col s12">
+                                                        <textarea id="Description" name="Description" class="materialize-textarea"></textarea>
+                                                        <label for="Description">Description</label>
+                                                    </div>
+                                                    <div class="input-field col s12">
+                                                        <select >
+                                                            <option value="" disabled selected>Category</option>
+                                                            <option value="1">Admission</option>
+                                                            <option value="2">Departmental</option>
+                                                            <option value="3">Entertainments</option>
+                                                            <option value="4">Events</option>
+                                                            <option value="5">General</option>
+                                                            <option value="6">Part Time</option>
+                                                            <option value="7">Full Time</option>
+                                                            <option value="8">Sport</option>
+                                                            <option value="9">Pre Degree</option>
+                                                            <option value="10">Post Degree</option>
+                                                            <option value="8">Scholarship</option>
+                                                            <option value="8">Other</option>
+                                                        </select>
+                                                        <label>Category</label>
+                                                    </div>
+                                                    <div class="form-group file-field input-field col s12">
+                                                        <div class="btn">
+                                                            <span>Attach Photo</span>
+                                                            <input type="file"  name="avatar" multiple>
+                                                        </div>
+                                                        <div class="file-path-wrapper">
+                                                            <input class="file-path validate" type="text" placeholder="Upload one or more Photo">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group input-field col s12">
+                                                        <input id="author" type="text" name="author" class="validate">
+                                                        <label for="author">News written By</label>
+                                                    </div>
+                                                    <div class="form-group input-field col s12">
+                                                        <input id="date" name="date" type="date" class="datepicker">
+                                                        <label for="date"></label>
+                                                    </div>
+                                                    <div class="form-group input-field col s12">
+                                                        <input id="source_link" name="source_link" type="text" class="validate">
+                                                        <label for="source_link">Source</label>
+                                                    </div>
+                                                    <!--<div class="form-group input-field col s12">
+                                                        <input id="p_caption" name="p_caption" type="text" class="validate">
+                                                        <label for="p_caption">Photo Caption</label>
+                                                    </div>-->
+                                                    <div class="col s5 offset-s5">
+                                                        <button class="btn waves-effect waves-light" type="submit" name="action">Publish
+                                                            <i class="material-icons right"></i>
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                </section>
+                            </div>
+                        </div>
+                        <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+                        <script type="text/javascript" src="../../js/materialize.js"></script>
+                        </body>
+
+                        </html>
+<!-- <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"> -->
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../../css/bootstrapValidator.css">
+<script type="text/javascript" src="../../js/bootstrapValidator.js"></script>
+<script type="text/javascript" src="../../js/admin/admin-Addnews.js"></script>
